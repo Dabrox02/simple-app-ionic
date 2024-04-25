@@ -1,0 +1,20 @@
+<ion-grid>
+  <ion-row>
+    <ion-col size="12">
+      <ion-button class="boton" color="primary" [routerLink]="['/inicio']" style="width: 100%;">
+          Inicio
+      </ion-button>
+    </ion-col>
+    <ion-col size="12">
+      <ion-button class="boton" color="primary" [routerLink]="['/action-sheet']" style="width: 100%;">
+        Action-Sheet
+      </ion-button>
+    </ion-col>
+    <ion-col size="12">
+      <!-- Este componente maneja un historial de direccion -->
+      <ion-nav-link router-direction="forward" [component]="pageAlerta">
+        <ion-button style="width: 100%;">Pagina Alerta</ion-button>
+      </ion-nav-link>
+    </ion-col>
+  </ion-row>
+</ion-grid>
